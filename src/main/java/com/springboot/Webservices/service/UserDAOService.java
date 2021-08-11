@@ -8,6 +8,9 @@ import org.springframework.stereotype.Repository;
 
 import com.springboot.Webservices.entity.User;
 
+//autowire get full control on other class. 
+//ClassA, ClassB
+//@AutoWired is used for the bean instantiation
 
 @Repository
 @Transactional
@@ -17,7 +20,7 @@ public class UserDAOService {
 	private EntityManager entityManager;
 	
 	
-	public UserDAOService() {
+	protected UserDAOService() {
 		// TODO Auto-generated constructor stub
 		
 		
@@ -38,4 +41,5 @@ public class UserDAOService {
 		
 		
 	}
+	
 }

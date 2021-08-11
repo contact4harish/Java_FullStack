@@ -1,6 +1,6 @@
-package com.springboot.Webservices;
+package com.springboot.JavaExamples;
 
-public class ClassA {
+public  class ClassA {
 String name="PRIYA";
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -20,6 +20,9 @@ String name="PRIYA";
 		System.out.println(classb.getCarName());
 		System.out.println(carmodel());
 		System.out.println(classb.carmodel());
+		InterfaceA intf1=new ClassC();
+		System.out.println(intf1.model());
+		
 	}
 	
 	public static int sum(int a, int b) {

@@ -1,4 +1,4 @@
-package com.springboot.Webservices;
+package com.springboot.JavaExamples;
 
 public class ClassB extends ClassA{
 
@@ -33,5 +33,6 @@ public static String carmodel() {
 	carModel="Q6";
 	return carModel;
 }
+
 
 }

@@ -1,5 +1,7 @@
 package com.springboot.Webservices;
 
+import java.text.SimpleDateFormat;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,9 +10,11 @@ import org.springframework.stereotype.Component;
 
 import com.springboot.Webservices.entity.User;
 import com.springboot.Webservices.service.UserDAOService;
+import com.springboot.Webservices.service.UserDAOService;
 
 //spring boot consider objects as a bean. 
 //conponent vs service
+
 @Component
 public class UserDAOServiceCommandLineRunner implements CommandLineRunner{
 	private static final Logger logger=LoggerFactory.getLogger(UserDAOServiceCommandLineRunner.class);
@@ -24,9 +28,11 @@ private UserDAOService userDAO;
 	
 	@Override
 	public void run(String... args) throws Exception {
-		User jack=new User("Jack", "Admin");
+		
+
+		User jack=new User("Jack", "Admin", "10/09/1990");
 		long id = userDAO.insert(jack);
-		logger.info(jack.toString());
+		logger.info(jack+" is created");
 		
 		
 	}
